@@ -1,0 +1,7 @@
+target 'TargetProject' do
+  use_frameworks!
+  pod 'BeacrewLoco', :path => 'BeacrewLoco'
+  pod 'Realm', '= 2.10.1'
+  pod 'MQTTClient', '= 0.9.9'
+  pod 'OpenSSL-Universal', '= 1.0.2.10'
+end

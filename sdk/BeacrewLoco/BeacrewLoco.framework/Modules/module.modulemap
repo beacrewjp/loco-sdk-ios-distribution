@@ -1,0 +1,6 @@
+framework module BeacrewLoco {
+  umbrella header "BeacrewLoco.h"
+
+  export *
+  module * { export * }
+}
