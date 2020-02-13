@@ -1,0 +1,8 @@
+target 'TargetProject' do
+  platform :ios, '9.0'
+  use_frameworks!
+  pod 'BeacrewLoco', '= 2.5.1'
+  pod 'Realm', '= 2.10.2'
+  pod 'MQTTClient', '= 0.15.3'
+  pod 'OpenSSL-Universal', '= 1.0.2.13'
+end
