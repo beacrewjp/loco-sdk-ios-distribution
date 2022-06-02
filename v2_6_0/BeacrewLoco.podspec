@@ -11,4 +11,6 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com//beacrewjp/loco-sdk-ios-distribution/' }
   s.ios.vendored_frameworks = "v2_6_0/sdk/BeacrewLoco/BeacrewLoco.framework"
   s.requires_arc  = true
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
