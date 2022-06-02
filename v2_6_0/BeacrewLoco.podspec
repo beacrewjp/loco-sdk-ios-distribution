@@ -8,7 +8,9 @@ Pod::Spec.new do |s|
   s.module_name = 'BeacrewLoco'
   s.ios.deployment_target = '9.0'
   s.ios.frameworks = "UIKit", "Foundation", "SystemConfiguration", "CoreLocation", "CoreBluetooth"
-  s.source = { :git => 'https://github.com//beacrewjp/loco-sdk-ios-distribution/' }
+  s.source = { :git => 'https://github.com//beacrewjp/loco-sdk-ios-distribution.git', :tag => "v#{s.version}" }
   s.ios.vendored_frameworks = "v2_6_0/sdk/BeacrewLoco/BeacrewLoco.framework"
   s.requires_arc  = true
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
