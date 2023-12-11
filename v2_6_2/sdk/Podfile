@@ -1,0 +1,19 @@
+target 'TargetProject' do
+  platform :ios, '9.0'
+  use_frameworks!
+  pod 'BeacrewLoco', '= 2.6.2'
+  pod 'Realm', '= 2.10.2'
+  pod 'MQTTClient', '= 0.15.3'
+  pod 'OpenSSL-Universal', '= 1.0.2.13'
+end
+
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+        config.build_settings['EXCLUDED_ARCHS[sdk=iphonesimulator*]'] = 'arm64'
+      end
+    end
+  end
+end
