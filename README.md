@@ -1,10 +1,17 @@
 ![](https://beacrew.jp/content/themes/child-theme/shared/img/service/loco/logo.png)
   
 ## LocoSDK iOS
-  
+
+### v2.8.1での変更点
+v2.8.1では、SDKがxcframework化され、Apple Silicon端末でのarm64シミュレーターでのビルドに対応しています
+
+### v2.8.1 ご利用時の注意  
+v2.8.1をcocoapod経由でインストールしてご使用になる場合、ビルド時に「Operation not permitted」が発生する場合が有ります  
+これは、Xcode 14/15以降で強化されたセキュリティ設定（User Script Sandboxing）が原因である可能性が高いと思われますので、Xcodeの設定画面の Build Settings で「sandbox」を検索していただき、Build Options - User Script Sandboxing の値を No に変更していただくとビルドが通るようになるかと思います  
+v2.8.1 は 近日中にSwift Package Manager（SPM）経由での配布を予定しています
+
 ### v2.8.0 ご利用時の注意  
   
-LocoSDK iOS v2.8.0がcocoapodsでの遠隔インストールに対応いたしました  
 v2.8.0をご使用になる場合、シミュレーター用バイナリはx86_64でのご利用になります  
 ※Apple Silicon搭載Macでご使用になる場合、シミュレーターはRosetta 2経由となります  
 シミュレーターでのarm64バイナリのご利用は近日中にxcframeworkを利用した形式で公開予定です  
