@@ -2,8 +2,15 @@
   
 ## LocoSDK iOS
 
-### v2.8.1での変更点
-v2.8.1では、SDKがxcframework化され、Apple Silicon端末でのarm64シミュレーターでのビルドに対応しています
+### v2.8.2での変更点  
+v2.8.2では、SPM(Swift Package Manager)でのプロジェクト取り込みに対応いたしました  
+SDKの動作自体はv2.8.1と同じ物となっております  
+
+### v2.8.2 ご利用時の注意
+v2.8.2はSPMの標準的な動作に対応する為、Staticなフレームワークとしてビルドされております。依存ライブラリであるRealmも同時にインポートされるようにPackage.swiftを設定しておりますが、既にRealmをDynamicなフレームワークとしてEmbedして使用している場合、実行時に定義の重複によるエラーが発生する場合が有ります  
+
+### v2.8.1での変更点  
+v2.8.1では、SDKがxcframework化され、Apple Silicon端末でのarm64シミュレーターでのビルドに対応しています  
 
 ### v2.8.1 ご利用時の注意  
 v2.8.1をcocoapod経由でインストールしてご使用になる場合、ビルド時に「Operation not permitted」が発生する場合が有ります  
