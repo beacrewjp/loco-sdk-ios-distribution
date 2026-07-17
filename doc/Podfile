@@ -1,0 +1,6 @@
+target 'TargetProject' do
+  platform :ios, '15.0'
+  use_frameworks!
+  pod 'BeacrewLoco', '= 2.9.0'
+  pod 'Realm', '>= 20.0.4'
+end
