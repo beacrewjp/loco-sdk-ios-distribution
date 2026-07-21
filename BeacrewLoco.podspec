@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.module_name = 'BeacrewLoco'
   s.ios.deployment_target = '15.0'
   s.ios.frameworks = 'UIKit', 'Foundation', 'SystemConfiguration', 'CoreLocation', 'CoreBluetooth'
-  s.source = { :http => 'https://github.com/beacrewjp/loco-sdk-ios-distribution/releases/download/v#{s.version}/BeacrewLocoDynamic.xcframework.zip' }
+  s.source = { :http => "https://github.com/beacrewjp/loco-sdk-ios-distribution/releases/download/v#{s.version}/BeacrewLocoDynamic.xcframework.zip" }
   s.ios.vendored_frameworks = 'BeacrewLoco.xcframework'
 end
