@@ -30,7 +30,7 @@ let package = Package(
                 .target(name: "BeacrewLocoDynamicBinary"),
                 .product(name: "Realm", package: "realm-swift")
             ],
-            path: "Sources/BeacrewLocoWrapper"
+            path: "Sources/BeacrewLocoDynamicWrapper"
         ),
         .target(
             name: "BeacrewLocoStaticWrapper",
@@ -38,7 +38,7 @@ let package = Package(
                 .target(name: "BeacrewLocoStaticBinary"),
                 .product(name: "Realm", package: "realm-swift")
             ],
-            path: "Sources/BeacrewLocoWrapper"
+            path: "Sources/BeacrewLocoStaticWrapper"
         )
     ]
 )
