@@ -17,12 +17,12 @@ let package = Package(
         .binaryTarget(
             name: "BeacrewLocoDynamicBinary",
             url: "https://github.com/beacrewjp/loco-sdk-ios-distribution/releases/download/v2.9.0/BeacrewLocoDynamic.xcframework.zip",
-            checksum: "2baf7664a1fc48aab8417f1c1b917fa41e518330313ada216de00adbcec7e500"
+            checksum: "e39a3764bd19fee2b820a0561064711ad97a955b117e6504d28e1daf8e788ac8"
         ),
         .binaryTarget(
             name: "BeacrewLocoStaticBinary",
             url: "https://github.com/beacrewjp/loco-sdk-ios-distribution/releases/download/v2.9.0/BeacrewLocoStatic.xcframework.zip",
-            checksum: "3ee686e8a9c5e5b0aff02a44f692ac2da99cf8731cde73e399e9e416df4aeb81"
+            checksum: "e78ba92908314c8ed80157a2b9e194ace74064017d7fafc3c34d29d970d65a3a"
         ),
         .target(
             name: "BeacrewLocoDynamicWrapper",
